@@ -1,3 +1,5 @@
+import { Instagram, Twitter, MessageCircle, Linkedin } from 'lucide-react'
+
 const Footer = () => {
     const currentYear = new Date().getFullYear()
 
@@ -13,30 +15,40 @@ const Footer = () => {
                             The all-in-one app for college students. One login. Complete campus life.
                         </p>
                         <div className="footer-social">
-                            <a href="#" className="footer-social-link">📸</a>
-                            <a href="#" className="footer-social-link">🐦</a>
-                            <a href="#" className="footer-social-link">💬</a>
-                            <a href="#" className="footer-social-link">💼</a>
+                            <a href="#" className="footer-social-link"><Instagram size={24} /></a>
+                            <a href="#" className="footer-social-link"><Twitter size={24} /></a>
+                            <a href="#" className="footer-social-link"><MessageCircle size={24} /></a>
+                            <a href="#" className="footer-social-link"><Linkedin size={24} /></a>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="footer-links-title">Product</h4>
+                        <h4 className="footer-links-title">CampusMart</h4>
                         <div className="footer-links">
-                            <a href="#features" className="footer-link">Features</a>
-                            <a href="#" className="footer-link">CampusMart</a>
-                            <a href="#" className="footer-link">LazyPeeps</a>
-                            <a href="#" className="footer-link">Community</a>
+                            <a href="#" className="footer-link">Buy & Sell Used Items</a>
+                            <a href="#" className="footer-link">Second-hand Books</a>
+                            <a href="#" className="footer-link">Student Freelancing</a>
+                            <a href="#" className="footer-link">Assignments & Projects</a>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="footer-links-title">Company</h4>
+                        <h4 className="footer-links-title">LazyPeeps</h4>
                         <div className="footer-links">
-                            <a href="#" className="footer-link">About Us</a>
-                            <a href="#" className="footer-link">Careers</a>
-                            <a href="#" className="footer-link">Blog</a>
-                            <a href="#" className="footer-link">Press Kit</a>
+                            <a href="#" className="footer-link">Canteen Pre-order</a>
+                            <a href="#" className="footer-link">Printout App</a>
+                            <a href="#" className="footer-link">Online Xerox</a>
+                            <a href="#" className="footer-link">Stationery Delivery</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 className="footer-links-title">Community</h4>
+                        <div className="footer-links">
+                            <a href="#" className="footer-link">College Notices</a>
+                            <a href="#" className="footer-link">Internships</a>
+                            <a href="#" className="footer-link">Student Discussions</a>
+                            <a href="#" className="footer-link">Memes & Confessions</a>
                         </div>
                     </div>
 
@@ -60,7 +72,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
 

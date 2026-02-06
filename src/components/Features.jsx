@@ -50,24 +50,24 @@ const Features = () => {
     const features = [
         {
             icon: <AIAssistantIcon />,
-            title: "Smart Study Buddy",
-            description: "Stuck on a problem? Get instant, smart help with your assignments. Upload, solving, learning—simplified.",
+            title: "Smart Study Buddy & Assignment Help",
+            description: "Better than ChatGPT for students. Upload assignments, get solutions, and ace your exams. Your 24/7 personal tutor.",
             link: "#",
             color: "green",
-            stats: "10K+ Assignments Done"
+            stats: "10K+ Assignments Solved"
         },
         {
             icon: <LazyPeepsIcon />,
-            title: "LazyPeeps Food Ordering",
-            description: "Skip the endless canteen queues. Order food, pay online, and just pick up. Your lunch break, reclaimed.",
+            title: "LazyPeeps - Skip Canteen Queues",
+            description: "The ultimate canteen pre-order app. Order food online, print documents from your phone, and skip the line entirely.",
             link: "#",
             color: "orange",
             stats: "Zero Queue Time"
         },
         {
             icon: <CampusMartIcon />,
-            title: "CampusMart Marketplace",
-            description: "Buy and sell used books, gadgets, and more within your campus. Safe, verified, and hassle-free student trading.",
+            title: "CampusMart - Buy & Sell",
+            description: "The best marketplace for college students. Buy second-hand books, sell old gadgets, and find freelance gigs on campus.",
             link: "#",
             color: "sage",
             stats: "5K+ Items Listed"

@@ -75,7 +75,7 @@ const Hero = () => {
                 {/* Navbar inside hero */}
                 <nav className="hero-nav">
                     <a href="#" className="hero-nav-logo">
-                        <img src="/logo.jpeg" alt="CollegePaglu" className="logo-image" />
+                        <img src="/collegepaglu%20logo%20-%20Edited.png" alt="CollegePaglu" className="logo-image" />
                     </a>
 
                     <div className="hero-nav-links">
@@ -95,23 +95,20 @@ const Hero = () => {
                 <div className="hero-typography">
                     <h1 className="hero-headline">
                         <span className="hero-line">
-                            <span className="hero-word">ASSIGNMENTS</span>
+                            <span className="hero-word">THE</span>
                             <span className="hero-bullet">•</span>
-                            <img
-                                src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=face"
-                                alt="Student"
-                                className="hero-avatar pink-border"
-                            />
-                            <span className="hero-word">CAMPUS</span>
+                            <span className="hero-word">ONE</span>
+                            <span className="hero-bullet">•</span>
+                            <span className="hero-word">SUPER</span>
                         </span>
                         <span className="hero-line">
-                            <span className="hero-word">CONVENIENCE</span>
+                            <span className="hero-word">APP</span>
                             <img
                                 src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=face"
                                 alt="Student"
                                 className="hero-avatar green-border"
                             />
-                            <span className="hero-word">YOUR</span>
+                            <span className="hero-word">EVERY</span>
                         </span>
                         <span className="hero-line">
                             <img
@@ -119,13 +116,17 @@ const Hero = () => {
                                 alt="Student"
                                 className="hero-avatar sage-border"
                             />
-                            <span className="hero-word">COMMUNITY</span>
+                            <span className="hero-word">COLLEGE</span>
                             <span className="hero-bullet">•</span>
+                            <span className="hero-word">STUDENT</span>
                             <img
                                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
                                 alt="Student"
                                 className="hero-avatar orange-border"
                             />
+                        </span>
+                        <span className="hero-line">
+                            <span className="hero-word">NEEDS</span>
                         </span>
                     </h1>
 
