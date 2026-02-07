@@ -1,37 +1,4 @@
-import { ArrowRight, Check, Clock, ShoppingBag, MessageCircle, Bell, Star, Zap } from 'lucide-react'
-
-// Custom themed icons
-const AssignmentDoneIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-        <polyline points="14 2 14 8 20 8" />
-        <path d="M9 15l2 2 4-4" />
-    </svg>
-)
-
-const OrderReadyIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
-        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-        <path d="M6 2v2" />
-        <path d="M10 2v2" />
-        <path d="M14 2v2" />
-    </svg>
-)
-
-const AITutorIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3" />
-        <path d="M12 1v2" />
-        <path d="M12 21v2" />
-        <path d="M4.22 4.22l1.42 1.42" />
-        <path d="M18.36 18.36l1.42 1.42" />
-        <path d="M1 12h2" />
-        <path d="M21 12h2" />
-        <path d="M4.22 19.78l1.42-1.42" />
-        <path d="M18.36 5.64l1.42-1.42" />
-    </svg>
-)
+import { ArrowRight, Check, Clock, ShoppingBag, MessageCircle, Bell, Star, Zap, Pizza, Coffee, Utensils, FileCheck, Sparkles, Book, Laptop, Headphones, Smartphone } from 'lucide-react'
 
 const PhoneShowcase = () => {
     return (
@@ -99,7 +66,7 @@ const PhoneShowcase = () => {
                     {/* 3D Floating Cards */}
                     <div className="floating-3d top-left">
                         <div className="floating-3d-icon green">
-                            <AITutorIcon />
+                            <Sparkles size={20} />
                         </div>
                         <div className="floating-3d-content">
                             <span className="floating-3d-title">Smart Study Active</span>
@@ -109,7 +76,7 @@ const PhoneShowcase = () => {
 
                     <div className="floating-3d top-right">
                         <div className="floating-3d-icon mint">
-                            <AssignmentDoneIcon />
+                            <FileCheck size={20} />
                         </div>
                         <div className="floating-3d-content">
                             <span className="floating-3d-title">Assignment Submitted!</span>
@@ -126,7 +93,7 @@ const PhoneShowcase = () => {
 
                     <div className="floating-3d bottom-right">
                         <div className="floating-3d-icon orange">
-                            <OrderReadyIcon />
+                            <Utensils size={20} />
                         </div>
                         <div className="floating-3d-content">
                             <span className="floating-3d-title">Order Ready!</span>
@@ -163,13 +130,13 @@ const PhoneShowcase = () => {
                                 <div className="phone-quick-actions">
                                     <div className="quick-action">
                                         <div className="quick-action-icon green">
-                                            <AITutorIcon />
+                                            <Sparkles size={20} />
                                         </div>
                                         <span>Smart Study</span>
                                     </div>
                                     <div className="quick-action">
                                         <div className="quick-action-icon orange">
-                                            <OrderReadyIcon />
+                                            <Utensils size={20} />
                                         </div>
                                         <span>LazyPeeps</span>
                                     </div>
@@ -196,7 +163,7 @@ const PhoneShowcase = () => {
                                 <div className="phone-task-card urgent">
                                     <div className="task-left">
                                         <div className="task-icon">
-                                            <AssignmentDoneIcon />
+                                            <FileCheck size={20} />
                                         </div>
                                         <div className="task-info">
                                             <span className="task-title">Data Structures Lab</span>
@@ -238,11 +205,17 @@ const PhoneShowcase = () => {
                                 </div>
                                 <div className="mini-screen-title">LazyPeeps</div>
                                 <div className="mini-order-card">
-                                    <span className="order-status">🍕 Order Ready</span>
+                                    <div className="order-status-row">
+                                        <Pizza size={14} />
+                                        <span className="order-status">Order Ready</span>
+                                    </div>
                                     <span className="order-detail">Counter 3</span>
                                 </div>
                                 <div className="mini-order-card">
-                                    <span className="order-status">☕ Preparing</span>
+                                    <div className="order-status-row">
+                                        <Coffee size={14} />
+                                        <span className="order-status">Preparing</span>
+                                    </div>
                                     <span className="order-detail">5 min left</span>
                                 </div>
                             </div>
@@ -259,10 +232,10 @@ const PhoneShowcase = () => {
                                 </div>
                                 <div className="mini-screen-title">CampusMart</div>
                                 <div className="mini-product-grid">
-                                    <div className="mini-product">📚</div>
-                                    <div className="mini-product">💻</div>
-                                    <div className="mini-product">🎧</div>
-                                    <div className="mini-product">📱</div>
+                                    <div className="mini-product"><Book size={16} /></div>
+                                    <div className="mini-product"><Laptop size={16} /></div>
+                                    <div className="mini-product"><Headphones size={16} /></div>
+                                    <div className="mini-product"><Smartphone size={16} /></div>
                                 </div>
                                 <div className="mini-tag">12 new listings</div>
                             </div>

@@ -1,4 +1,4 @@
-import { Instagram, Twitter, MessageCircle, Linkedin } from 'lucide-react'
+import { Instagram, MessageCircle, Linkedin } from 'lucide-react'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -15,8 +15,12 @@ const Footer = () => {
                             The all-in-one app for college students. One login. Complete campus life.
                         </p>
                         <div className="footer-social">
-                            <a href="#" className="footer-social-link"><Instagram size={24} /></a>
-                            <a href="#" className="footer-social-link"><Twitter size={24} /></a>
+                            <a href="https://www.instagram.com/collegepaglu.official/" target="_blank" rel="noopener noreferrer" className="footer-social-link"><Instagram size={24} /></a>
+                            <a href="https://x.com/collegepaglu" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231h.001Zm-1.161 17.52h1.833L7.084 4.126H5.117l12.166 15.644Z" />
+                                </svg>
+                            </a>
                             <a href="#" className="footer-social-link"><MessageCircle size={24} /></a>
                             <a href="#" className="footer-social-link"><Linkedin size={24} /></a>
                         </div>

@@ -1,63 +1,18 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Users, Coffee, Store } from 'lucide-react'
 
-// Premium SVG Icons for Features
-const AIAssistantIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
-        <defs>
-            <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3D5940" />
-                <stop offset="100%" stopColor="#8BA888" />
-            </linearGradient>
-        </defs>
-        <circle cx="24" cy="24" r="20" fill="url(#ai-grad)" opacity="0.1" />
-        <circle cx="24" cy="24" r="8" stroke="url(#ai-grad)" strokeWidth="3" fill="none" />
-        <path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="url(#ai-grad)" strokeWidth="2.5" strokeLinecap="round" />
-        <path d="M10.3 10.3l5.7 5.7M32 32l5.7 5.7M10.3 37.7l5.7-5.7M32 16l5.7-5.7" stroke="url(#ai-grad)" strokeWidth="2" strokeLinecap="round" />
-    </svg>
-)
-
-const LazyPeepsIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
-        <defs>
-            <linearGradient id="cafe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#FF8C42" />
-                <stop offset="100%" stopColor="#FFB380" />
-            </linearGradient>
-        </defs>
-        <circle cx="24" cy="24" r="20" fill="url(#cafe-grad)" opacity="0.1" />
-        <path d="M32 20h2a6 6 0 0 1 0 12h-2" stroke="url(#cafe-grad)" strokeWidth="3" strokeLinecap="round" />
-        <path d="M12 20h20v14a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6V20z" stroke="url(#cafe-grad)" strokeWidth="3" fill="none" />
-        <path d="M16 8v6M22 8v6M28 8v6" stroke="url(#cafe-grad)" strokeWidth="2.5" strokeLinecap="round" />
-    </svg>
-)
-
-const CampusMartIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
-        <defs>
-            <linearGradient id="mart-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#8BA888" />
-                <stop offset="100%" stopColor="#5F7A61" />
-            </linearGradient>
-        </defs>
-        <circle cx="24" cy="24" r="20" fill="url(#mart-grad)" opacity="0.1" />
-        <circle cx="18" cy="38" r="3" stroke="url(#mart-grad)" strokeWidth="2.5" />
-        <circle cx="34" cy="38" r="3" stroke="url(#mart-grad)" strokeWidth="2.5" />
-        <path d="M8 10h6l4 20h20l4-14H16" stroke="url(#mart-grad)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-)
-
+// Features with Styled Lucide Icons
 const Features = () => {
     const features = [
         {
-            icon: <AIAssistantIcon />,
-            title: "Smart Study Buddy & Assignment Help",
-            description: "Better than ChatGPT for students. Upload assignments, get solutions, and ace your exams. Your 24/7 personal tutor.",
+            icon: <Users size={32} strokeWidth={1.5} />,
+            title: "Anonymous Community",
+            description: "The heartbeat of your campus. Share confessions, ask questions anonymously, and find your tribe without the social pressure.",
             link: "#",
             color: "green",
-            stats: "10K+ Assignments Solved"
+            stats: "Active Campus Feed"
         },
         {
-            icon: <LazyPeepsIcon />,
+            icon: <Coffee size={32} strokeWidth={1.5} />,
             title: "LazyPeeps - Skip Canteen Queues",
             description: "The ultimate canteen pre-order app. Order food online, print documents from your phone, and skip the line entirely.",
             link: "#",
@@ -65,12 +20,12 @@ const Features = () => {
             stats: "Zero Queue Time"
         },
         {
-            icon: <CampusMartIcon />,
-            title: "CampusMart - Buy & Sell",
-            description: "The best marketplace for college students. Buy second-hand books, sell old gadgets, and find freelance gigs on campus.",
+            icon: <Store size={32} strokeWidth={1.5} />,
+            title: "CampusMart & Assignments",
+            description: "Buy & sell notes, gadgets, or outsource your assignments. The all-in-one marketplace for products and peer services.",
             link: "#",
             color: "sage",
-            stats: "5K+ Items Listed"
+            stats: "Products & Gigs"
         }
     ]
 
