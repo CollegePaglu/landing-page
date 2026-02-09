@@ -1,7 +1,7 @@
-import { ArrowUpRight, ClipboardList, Coffee, Users, Bot, Store, Bell } from 'lucide-react'
+import { ArrowUpRight, ClipboardList, Coffee, Users, Bot, Store, Bell, Sparkles } from 'lucide-react'
 import WaitlistTimer from './WaitlistTimer'
 
-const Hero = () => {
+const Hero = ({ onOpenWaitlist }) => {
     // Sliding cards data - app themed
     const slidingCards = [
         { type: 'sage-blob', icon: <Bot size={22} />, title: 'Smart Study', subtitle: 'Buddy' },
@@ -35,7 +35,9 @@ const Hero = () => {
 
                     <div className="hero-nav-actions">
                         <a href="#" className="hero-nav-login">LOG IN</a>
-                        <button className="hero-nav-signup">GET STARTED</button>
+                        <button className="hero-nav-signup" onClick={onOpenWaitlist}>
+                            JOIN WAITLIST
+                        </button>
                     </div>
                 </nav>
 
@@ -80,12 +82,14 @@ const Hero = () => {
 
                     <p className="hero-tagline">Your campus life, simplified. Assignments, food, community — all in one app.</p>
 
-                    {/* Waitlist Timer - Added here */}
+                    {/* Waitlist Timer */}
                     <WaitlistTimer />
 
-                    <a href="#features" className="hero-handwritten">
-                        (Download now↓)
-                    </a>
+                    {/* CTA Button */}
+                    <button className="hero-waitlist-btn" onClick={onOpenWaitlist}>
+                        <Sparkles size={18} />
+                        Join the Waitlist
+                    </button>
                 </div>
 
                 {/* Infinite Sliding Cards Row */}
