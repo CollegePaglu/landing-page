@@ -85,18 +85,18 @@ const Features = () => {
                 {/* Trust Banner */}
                 <div className="features-trust">
                     <div className="trust-item">
-                        <span className="trust-number">50K+</span>
-                        <span className="trust-label">Active Students</span>
+                        <span className="trust-number">1,200+</span>
+                        <span className="trust-label">Waitlist Signups</span>
                     </div>
                     <div className="trust-divider"></div>
                     <div className="trust-item">
-                        <span className="trust-number">100+</span>
-                        <span className="trust-label">Colleges</span>
+                        <span className="trust-number">15+</span>
+                        <span className="trust-label">Pilot Colleges</span>
                     </div>
                     <div className="trust-divider"></div>
                     <div className="trust-item">
-                        <span className="trust-number">4.9★</span>
-                        <span className="trust-label">App Rating</span>
+                        <span className="trust-number">100%</span>
+                        <span className="trust-label">Student Built</span>
                     </div>
                 </div>
             </div>

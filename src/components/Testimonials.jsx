@@ -9,9 +9,9 @@ const Testimonials = () => {
         },
         {
             stars: '★★★★★',
-            text: 'LazyPeeps saved my life during exams. Pre-ordered my canteen food and never had to wait in those insane queues again. Game changer!',
+            text: 'Sold my old engineering books on CampusMart within 2 days! Made ₹3000 and helped a junior get affordable books. Win-win situation.',
             name: 'Priya M.',
-            role: 'BBA, 2nd Year',
+            role: 'BTech, Final Year',
             emoji: '👩‍🎓',
         },
         {

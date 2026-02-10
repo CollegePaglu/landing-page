@@ -29,10 +29,10 @@ const Footer = () => {
                     <div>
                         <h4 className="footer-links-title">CampusMart</h4>
                         <div className="footer-links">
-                            <a href="#" className="footer-link">Buy & Sell Used Items</a>
-                            <a href="#" className="footer-link">Second-hand Books</a>
-                            <a href="#" className="footer-link">Student Freelancing</a>
-                            <a href="#" className="footer-link">Assignments & Projects</a>
+                            <a href="https://www.campusmart.store/" target="_blank" rel="noopener noreferrer" className="footer-link">Buy & Sell Used Items</a>
+                            <a href="https://www.campusmart.store/" target="_blank" rel="noopener noreferrer" className="footer-link">Second-hand Books</a>
+                            <a href="https://www.campusmart.store/" target="_blank" rel="noopener noreferrer" className="footer-link">Student Freelancing</a>
+                            <a href="https://www.campusmart.store/" target="_blank" rel="noopener noreferrer" className="footer-link">Assignments & Projects</a>
                         </div>
                     </div>
 

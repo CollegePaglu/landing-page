@@ -6,32 +6,31 @@ import { Users, Building, PiggyBank, Star } from 'lucide-react'
 const stats = [
     {
         icon: Users,
-        value: 10000,
+        value: 1000,
         suffix: '+',
-        label: 'Active Students',
+        label: 'Waitlist Signups',
         color: 'indigo'
     },
     {
         icon: Building,
-        value: 50,
+        value: 5,
         suffix: '+',
-        label: 'Partner Colleges',
+        label: 'Pilot Colleges',
         color: 'orange'
     },
     {
         icon: PiggyBank,
-        value: 21,
-        suffix: 'L+',
-        prefix: '₹',
-        label: 'Money Saved',
+        value: 3,
+        suffix: '',
+        label: 'Core Features',
         color: 'teal'
     },
     {
         icon: Star,
-        value: 49,
-        suffix: '',
-        label: 'App Rating',
-        decimal: true,
+        value: 100,
+        suffix: '%',
+        label: 'Student Built',
+        decimal: false,
         color: 'pink'
     }
 ]

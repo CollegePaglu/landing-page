@@ -56,59 +56,76 @@
 
 .toggle-switch {
     position: relative;
-    width: 80px;
+    width: 88px;
+    /* Slightly wider for better text spacing */
     height: 36px;
-    background: #E8E4DC;
-    border: none;
+    background: #e2ded6;
+    /* Darker beige for better contrast against white slider */
+    border: 1px solid #cfcbc2;
+    /* Defined border */
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     flex-shrink: 0;
     overflow: hidden;
 }
 
 .toggle-switch:hover {
-    background: #F0EDE7;
+    background: #dcd8d0;
+    border-color: #bebdb6;
 }
 
 .toggle-switch.active {
     background: #3D5940;
+    border-color: #3D5940;
 }
 
 .toggle-slider {
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: 4px;
     width: 28px;
     height: 28px;
     background: white;
     border-radius: 50%;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 2;
 }
 
 .toggle-switch.active .toggle-slider {
-    transform: translateX(44px);
+    transform: translateX(50px);
 }
 
+/* Text State */
 .toggle-state {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    /* Remove generic transform, handle per state */
+    font-size: 12px;
+    font-weight: 900;
+    /* Extra bold for clarity */
+    letter-spacing: 0.8px;
     text-transform: uppercase;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
+/* Inactive State Text (NO) - Centered in Right Space */
 .toggle-switch:not(.active) .toggle-state {
-    right: 10px;
-    color: #666;
+    left: 60px;
+    /* Center of right empty space: slider ends at 32px, switch ends at 88px, center = 60px */
+    transform: translate(-50%, -50%);
+    color: #222;
 }
 
+/* Active State Text (YES) - Centered in Left Space */
 .toggle-switch.active .toggle-state {
-    left: 12px;
+    left: 27px;
+    /* Center of left empty space: 0 to 54px (slider starts at 54px when active), center = 27px */
+    transform: translate(-50%, -50%);
     color: white;
 }
 
