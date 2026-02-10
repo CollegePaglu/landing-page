@@ -284,10 +284,9 @@ const WaitlistModal = ({ isOpen, onClose }) => {
                                                     className={`toggle-switch ${formData[question.id] ? 'active' : ''}`}
                                                     aria-label={question.label}
                                                 >
-                                                    <span className="toggle-slider"></span>
-                                                    <span className="toggle-state">
-                                                        {formData[question.id] ? 'Yes' : 'No'}
-                                                    </span>
+                                                    <span className="toggle-option option-yes">YES</span>
+                                                    <span className="toggle-option option-no">NO</span>
+                                                    <span className="toggle-slider-pill"></span>
                                                 </div>
                                             </div>
                                         </div>
