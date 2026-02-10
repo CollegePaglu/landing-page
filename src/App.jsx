@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Hero from './components/Hero'
 import PhoneShowcase from './components/PhoneShowcase'
 import Features from './components/Features'
@@ -13,6 +13,13 @@ import './index.css'
 
 function App() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false)
+
+  // Track page visit (fire-and-forget)
+  useEffect(() => {
+    if (window.location.pathname !== '/response/form/analysis') {
+      fetch('/api/track-visit', { method: 'POST' }).catch(() => { })
+    }
+  }, [])
 
   const openWaitlist = () => setIsWaitlistOpen(true)
   const closeWaitlist = () => setIsWaitlistOpen(false)

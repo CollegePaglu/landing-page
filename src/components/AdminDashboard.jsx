@@ -9,6 +9,7 @@ const AdminDashboard = () => {
     const [loginLoading, setLoginLoading] = useState(false)
 
     const [data, setData] = useState(null)
+    const [totalVisits, setTotalVisits] = useState(0)
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
     const [search, setSearch] = useState('')
@@ -58,13 +59,18 @@ const AdminDashboard = () => {
     const fetchData = async () => {
         setLoading(true)
         try {
-            const res = await fetch('/api/responses')
-            const json = await res.json()
+            const [responsesRes, visitsRes] = await Promise.all([
+                fetch('/api/responses'),
+                fetch('/api/track-visit').catch(() => ({ json: async () => ({ count: 0 }) }))
+            ])
+            const json = await responsesRes.json()
+            const visitsJson = await visitsRes.json()
             if (json.success) {
                 setData(json.data)
             } else {
                 setError(json.message || 'Failed to load')
             }
+            setTotalVisits(visitsJson.count || 0)
         } catch {
             setError('Failed to connect to API')
         } finally {
@@ -165,6 +171,13 @@ const AdminDashboard = () => {
 
                 {/* Overview Cards */}
                 <div className="admin-stats-grid">
+                    <div className="admin-stat-card stat-visits">
+                        <span className="stat-icon">🌐</span>
+                        <div className="stat-info">
+                            <span className="stat-number">{totalVisits.toLocaleString()}</span>
+                            <span className="stat-label">Total Visits</span>
+                        </div>
+                    </div>
                     <div className="admin-stat-card stat-total">
                         <span className="stat-icon">👥</span>
                         <div className="stat-info">

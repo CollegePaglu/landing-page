@@ -226,7 +226,7 @@
 
 .admin-stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -272,6 +272,14 @@
 
 .stat-beta::after {
   background: linear-gradient(90deg, #FF8C42, transparent);
+}
+
+.stat-visits::after {
+  background: linear-gradient(90deg, #38bdf8, transparent);
+}
+
+.stat-visits .stat-number {
+  color: #38bdf8;
 }
 
 .stat-icon {
@@ -629,7 +637,7 @@
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .admin-stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .admin-demo-grid {
@@ -639,7 +647,7 @@
 
 @media (max-width: 640px) {
   .admin-stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .admin-header {
