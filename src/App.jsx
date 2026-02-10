@@ -7,6 +7,7 @@ import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import WaitlistModal from './components/WaitlistModal'
+import AdminDashboard from './components/AdminDashboard'
 
 import './index.css'
 
@@ -15,6 +16,11 @@ function App() {
 
   const openWaitlist = () => setIsWaitlistOpen(true)
   const closeWaitlist = () => setIsWaitlistOpen(false)
+
+  // Admin dashboard route
+  if (window.location.pathname === '/response/form/analysis') {
+    return <AdminDashboard />
+  }
 
   return (
     <>

@@ -53,21 +53,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
         return () => { document.body.style.overflow = '' }
     }, [isOpen])
 
-    const colleges = [
-        "IIT Bombay", "IIT Delhi", "IIT Madras", "IIT Kanpur", "IIT Kharagpur", "IIT Roorkee", "IIT Guwahati", "IIT Hyderabad",
-        "BITS Pilani", "BITS Goa", "BITS Hyderabad",
-        "NIT Trichy", "NIT Warangal", "NIT Surathkal", "NIT Calicut", "NIT Rourkela",
-        "IIIT Hyderabad", "IIIT Bangalore", "IIIT Delhi", "IIIT Allahabad",
-        "Delhi Technological University (DTU)", "NSUT (NSIT)",
-        "Jadavpur University", "Anna University", "Vellore Institute of Technology (VIT)",
-        "Manipal Institute of Technology (MIT)", "SRM Institute of Science and Technology",
-        "Thapar Institute of Engineering and Technology",
-        "Amity University", "Lovely Professional University (LPU)", "Chandigarh University",
-        "Jamia Millia Islamia", "Aligarh Muslim University", "Banaras Hindu University (BHU)",
-        "University of Mumbai", "University of Delhi", "Christ University",
-        "Symbiosis International", "NMIMS Mumbai",
-        "Other"
-    ]
+
 
     const yearOptions = ['1st Year', '2nd Year', '3rd Year', '4th Year']
 
@@ -239,18 +225,12 @@ const WaitlistModal = ({ isOpen, onClose }) => {
                             <div className="form-group">
                                 <label>College Name *</label>
                                 <input
-                                    list="colleges-list"
                                     type="text"
-                                    placeholder="Search or type your college..."
+                                    placeholder="Type your college name..."
                                     value={formData.college}
                                     onChange={e => handleInputChange('college', e.target.value)}
                                     className={errors.college ? 'error' : ''}
                                 />
-                                <datalist id="colleges-list">
-                                    {colleges.map((college, index) => (
-                                        <option key={index} value={college} />
-                                    ))}
-                                </datalist>
                                 {errors.college && <span className="field-error">{errors.college}</span>}
                             </div>
 

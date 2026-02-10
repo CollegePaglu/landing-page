@@ -10,7 +10,12 @@ async function start() {
 
     // ── API routes ──
     const { default: waitlistHandler } = await import('./api/waitlist.js');
+    const { default: responsesHandler } = await import('./api/responses.js');
+    const { default: authHandler } = await import('./api/auth.js');
+
     app.post('/api/waitlist', waitlistHandler);
+    app.get('/api/responses', responsesHandler);
+    app.post('/api/auth', authHandler);
 
     // ── Vite dev middleware (serves the React frontend) ──
     const vite = await createViteServer({
@@ -23,7 +28,7 @@ async function start() {
     app.listen(PORT, () => {
         console.log();
         console.log(`  🚀  http://localhost:${PORT}`);
-        console.log(`  Frontend + API on one port`);
+        console.log(`  📊  http://localhost:${PORT}/response/form/analysis`);
         console.log();
     });
 }
