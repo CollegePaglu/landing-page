@@ -34,7 +34,7 @@ const Hero = ({ onOpenWaitlist }) => {
                     </div>
 
                     <div className="hero-nav-actions">
-                        <a href="#" className="hero-nav-login">LOG IN</a>
+                        {/* <a href="#" className="hero-nav-login">LOG IN</a> */}
                         <button className="hero-nav-signup" onClick={onOpenWaitlist}>
                             JOIN WAITLIST
                         </button>
@@ -82,8 +82,8 @@ const Hero = ({ onOpenWaitlist }) => {
 
                     <p className="hero-tagline">Your campus life, simplified. Assignments, food, community — all in one app.</p>
 
-                    {/* Waitlist Timer */}
-                    <WaitlistTimer />
+                    {/* Waitlist Timer - Passed open handler */}
+                    <WaitlistTimer onOpen={onOpenWaitlist} />
 
                     {/* CTA Button */}
                     <button className="hero-waitlist-btn" onClick={onOpenWaitlist}>

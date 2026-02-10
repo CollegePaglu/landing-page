@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const waitlistUserSchema = new mongoose.Schema({
+    // Basic Information
     name: {
         type: String,
         required: true,
@@ -28,47 +29,38 @@ const waitlistUserSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    biggest_challenge: {
-        type: [String],
-        required: true,
-        validate: {
-            validator: function (v) {
-                return v && v.length > 0;
-            },
-            message: 'Select at least one challenge'
-        }
+
+    // Survey Questions (Yes/No)
+    q1_social_feed: {
+        type: Boolean,
+        required: true
     },
-    preferred_features: {
-        type: [String],
-        required: true,
-        validate: {
-            validator: function (v) {
-                return v && v.length > 0;
-            },
-            message: 'Select at least one feature'
-        }
+    q2_assignment_marketplace: {
+        type: Boolean,
+        required: true
     },
-    current_solution: {
-        type: String,
-        required: true,
-        enum: [
-            'WhatsApp groups',
-            'Seniors / friends',
-            'Google / YouTube',
-            'Multiple apps',
-            "I don't have a good solution"
-        ]
+    q3_snacks_printouts: {
+        type: Boolean,
+        required: true
     },
-    beta_interest: {
-        type: String,
-        required: true,
-        enum: ['Yes', 'Maybe', 'No']
+    q4_society_updates: {
+        type: Boolean,
+        required: true
     },
-    primary_device: {
-        type: String,
-        required: true,
-        enum: ['Android', 'iOS', 'Laptop / Web']
+    q5_campus_marketplace: {
+        type: Boolean,
+        required: true
     },
+    q6_beta_interest: {
+        type: Boolean,
+        required: true
+    },
+    q7_mobile_preference: {
+        type: Boolean,
+        required: true
+    },
+
+    // Metadata
     source: {
         type: String,
         default: 'landing_page'

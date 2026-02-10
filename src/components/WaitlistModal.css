@@ -1,0 +1,142 @@
+/* ===== SURVEY TOGGLE SWITCHES ===== */
+.survey-section {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 2px solid var(--beige-medium);
+}
+
+.survey-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--forest-deep);
+    margin-bottom: 6px;
+}
+
+.survey-subtitle {
+    font-size: 13px;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.toggle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.toggle-item {
+    background: white;
+    border: 2px solid var(--beige-medium);
+    border-radius: 14px;
+    padding: 16px 18px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toggle-item:hover {
+    border-color: #8BA888;
+    box-shadow: 0 4px 12px rgba(139, 168, 136, 0.1);
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 80px;
+    height: 36px;
+    background: #E8E4DC;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.toggle-switch:hover {
+    background: #F0EDE7;
+}
+
+.toggle-switch.active {
+    background: #3D5940;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch.active .toggle-slider {
+    transform: translateX(44px);
+}
+
+.toggle-state {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toggle-switch:not(.active) .toggle-state {
+    right: 10px;
+    color: #666;
+}
+
+.toggle-switch.active .toggle-state {
+    left: 12px;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .toggle-item {
+        padding: 14px 16px;
+    }
+
+    .toggle-text {
+        font-size: 13px;
+    }
+
+    .toggle-switch {
+        width: 70px;
+        height: 32px;
+    }
+
+    .toggle-slider {
+        width: 24px;
+        height: 24px;
+    }
+
+    .toggle-switch.active .toggle-slider {
+        transform: translateX(38px);
+    }
+
+    .toggle-state {
+        font-size: 10px;
+    }
+}

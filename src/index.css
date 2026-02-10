@@ -1,7 +1,7 @@
-@import "tailwindcss";
-
 /* ===== FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
 
 /* ===== ROOT VARIABLES ===== */
 :root {
@@ -2416,7 +2416,10 @@ h6 {
 @media (max-width: 600px) {
   .waitlist-modal {
     padding: 24px 20px;
-    max-height: 85vh;
+    max-height: 85dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .form-row {
