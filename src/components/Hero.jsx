@@ -1,7 +1,6 @@
-import { ArrowUpRight, ClipboardList, Coffee, Users, Bot, Store, Bell, Sparkles } from 'lucide-react'
-import WaitlistTimer from './WaitlistTimer'
+import { ArrowUpRight, ClipboardList, Coffee, Users, Bot, Store, Bell } from 'lucide-react'
 
-const Hero = ({ onOpenWaitlist }) => {
+const Hero = () => {
     // Sliding cards data - app themed
     const slidingCards = [
         { type: 'sage-blob', icon: <Bot size={22} />, title: 'Smart Study', subtitle: 'Buddy' },
@@ -31,13 +30,11 @@ const Hero = ({ onOpenWaitlist }) => {
                         <a href="#showcase" className="hero-nav-link">APP</a>
                         <a href="#testimonials" className="hero-nav-link">REVIEWS</a>
                         <a href="#faq" className="hero-nav-link">FAQ</a>
+                        <a href="/legal" className="hero-nav-link">TERMS</a>
                     </div>
 
                     <div className="hero-nav-actions">
                         {/* <a href="#" className="hero-nav-login">LOG IN</a> */}
-                        <button className="hero-nav-signup" onClick={onOpenWaitlist}>
-                            JOIN WAITLIST
-                        </button>
                     </div>
                 </nav>
 
@@ -81,15 +78,6 @@ const Hero = ({ onOpenWaitlist }) => {
                     </h1>
 
                     <p className="hero-tagline">Your campus life, simplified. Assignments, food, community — all in one app.</p>
-
-                    {/* Waitlist Timer - Passed open handler */}
-                    <WaitlistTimer onOpen={onOpenWaitlist} />
-
-                    {/* CTA Button */}
-                    <button className="hero-waitlist-btn" onClick={onOpenWaitlist}>
-                        <Sparkles size={18} />
-                        Join the Waitlist
-                    </button>
                 </div>
 
                 {/* Infinite Sliding Cards Row */}

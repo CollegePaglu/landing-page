@@ -87,7 +87,7 @@ const PhoneShowcase = () => {
                     <div className="floating-3d bottom-left">
                         <div className="floating-3d-stats">
                             <span className="stats-number">1.2K+</span>
-                            <span className="stats-label">On Waitlist</span>
+                            <span className="stats-label">Active Users</span>
                         </div>
                     </div>
 

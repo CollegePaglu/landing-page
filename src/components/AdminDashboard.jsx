@@ -160,7 +160,7 @@ const AdminDashboard = () => {
                 {/* Header */}
                 <header className="admin-header">
                     <div>
-                        <h1>Waitlist Analytics</h1>
+                        <h1>User Analytics</h1>
                         <p className="admin-subtitle">CollegePaglu — Form Responses</p>
                     </div>
                     <div className="header-actions">

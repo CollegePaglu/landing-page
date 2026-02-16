@@ -86,7 +86,7 @@ const Features = () => {
                 <div className="features-trust">
                     <div className="trust-item">
                         <span className="trust-number">1,200+</span>
-                        <span className="trust-label">Waitlist Signups</span>
+                        <span className="trust-label">Active Users</span>
                     </div>
                     <div className="trust-divider"></div>
                     <div className="trust-item">

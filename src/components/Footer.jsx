@@ -62,7 +62,8 @@ const Footer = () => {
                             <a href="#faq" className="footer-link">FAQ</a>
                             <a href="#" className="footer-link">Help Center</a>
                             <a href="#" className="footer-link">Contact Us</a>
-                            <a href="#" className="footer-link">Privacy Policy</a>
+                            <a href="/legal#terms" className="footer-link">Terms & Conditions</a>
+                            <a href="/legal#privacy" className="footer-link">Privacy Policy</a>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const stats = [
         icon: Users,
         value: 1000,
         suffix: '+',
-        label: 'Waitlist Signups',
+        label: 'Active Users',
         color: 'indigo'
     },
     {
