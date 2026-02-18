@@ -346,17 +346,36 @@ const LegalPage = () => {
                                 CollegePaglu is intended for users aged 18 and above. If you are under 18, you must have parental or guardian consent to use our platform. We do not knowingly collect data from children under 13. If we discover such data, we will delete it immediately.
                             </p>
 
-                            <h3><span className="legal-number">9.</span> International Data Transfers</h3>
+                            <h3><span className="legal-number">9.</span> Child Sexual Abuse and Exploitation</h3>
+                            <div className="legal-highlight">
+                                <AlertCircle size={20} />
+                                <p>
+                                    <strong>Zero-Tolerance Policy:</strong> CollegePaglu has a strict zero-tolerance policy against Child Sexual Abuse Material (CSAM) and any form of child sexual exploitation or abuse.
+                                </p>
+                            </div>
+                            <p>
+                                We are deeply committed to protecting children from harm and preventing the misuse of our platform for any form of child sexual abuse or exploitation. The following measures are in place:
+                            </p>
+                            <ul>
+                                <li><strong>Strict Prohibition:</strong> The creation, upload, sharing, distribution, or promotion of Child Sexual Abuse Material (CSAM) or any content that sexually exploits, abuses, or endangers minors is <strong>strictly prohibited</strong> on our platform.</li>
+                                <li><strong>Automated Detection:</strong> We employ automated detection systems (including PhotoDNA and similar technologies) and human moderation to proactively identify and remove such content before it can cause harm.</li>
+                                <li><strong>Mandatory Reporting:</strong> Any detected CSAM is immediately reported to the <strong>National Center for Missing &amp; Exploited Children (NCMEC)</strong> via CyberTipline, and to appropriate Indian law enforcement agencies including the <strong>Cyber Crime Cell</strong>, in compliance with applicable laws.</li>
+                                <li><strong>Immediate Account Termination:</strong> Any user found creating, sharing, or distributing such content will have their account <strong>permanently terminated</strong> without notice. We will preserve all relevant data to assist law enforcement investigations.</li>
+                                <li><strong>No Grooming or Solicitation:</strong> Any attempt to use our platform to groom, solicit, or exploit minors is strictly prohibited and will be reported to authorities immediately.</li>
+                                <li><strong>Report Abuse:</strong> If you encounter any content that sexually exploits or abuses a child, please report it immediately to <a href="mailto:safety@collegepaglu.com">safety@collegepaglu.com</a> or use the in-app report feature. You may also report directly to NCMEC at <a href="https://www.missingkids.org/gethelpnow/cybertipline" target="_blank" rel="noopener noreferrer">CyberTipline</a>.</li>
+                            </ul>
+
+                            <h3><span className="legal-number">10.</span> International Data Transfers</h3>
                             <p>
                                 Your data is primarily stored and processed on servers located in India. If we transfer data outside India, we ensure adequate safeguards are in place to protect your information in accordance with applicable laws.
                             </p>
 
-                            <h3><span className="legal-number">10.</span> Changes to This Privacy Policy</h3>
+                            <h3><span className="legal-number">11.</span> Changes to This Privacy Policy</h3>
                             <p>
                                 We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the platform after changes constitutes acceptance of the revised policy.
                             </p>
 
-                            <h3><span className="legal-number">11.</span> Contact Us</h3>
+                            <h3><span className="legal-number">12.</span> Contact Us</h3>
                             <p>
                                 For privacy-related questions, concerns, or requests, please contact us:
                             </p>
