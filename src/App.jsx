@@ -8,6 +8,7 @@ import CTA from './components/CTA'
 import Footer from './components/Footer'
 import AdminDashboard from './components/AdminDashboard'
 import LegalPage from './components/LegalPage'
+import DeleteAccountPage from './components/DeleteAccountPage'
 
 import './index.css'
 
@@ -29,6 +30,11 @@ function App() {
     window.location.pathname === '/terms' ||
     window.location.pathname === '/privacy') {
     return <LegalPage />
+  }
+
+  // Delete Account Page route
+  if (window.location.pathname === '/delete-account') {
+    return <DeleteAccountPage />
   }
 
   return (
